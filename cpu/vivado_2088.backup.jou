@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 10 03:01:07 2022
+# Process ID: 2088
+# Current directory: D:/Desktop/cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3508 D:\Desktop\cpu\cpu.xpr
+# Log file: D:/Desktop/cpu/vivado.log
+# Journal file: D:/Desktop/cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/cpu/cpu.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegFile [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top t_InstMem [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/Desktop/cpu/t_CPU_behav1.wcfg
+source t_InstMem.tcl
+export_ip_user_files -of_objects  [get_files D:/Desktop/cpu/t_CPU_behav1.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/Desktop/cpu/t_CPU_behav1.wcfg
+close_sim
+launch_simulation
+source t_InstMem.tcl

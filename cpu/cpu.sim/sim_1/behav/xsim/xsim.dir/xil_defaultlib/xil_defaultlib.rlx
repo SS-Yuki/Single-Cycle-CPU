@@ -1,0 +1,16 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Desktop/cpu/cpu.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_ALU.v,1641742745,verilog,,,,t_ALU,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_Adder.v,1641733838,verilog,,,,t_Adder,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_CPU.v,1641745597,verilog,,,,t_CPU,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_DataMemory.v,1641735935,verilog,,,,t_DataMemory,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_Ext.v,1641747938,verilog,,,,t_Ext,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_InstMem.v,1641748419,verilog,,,,t_InstMem,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_MUX_5.v,1641735034,verilog,,,,t_MUX_5,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_ProgramCounter.v,1641745791,verilog,,,,t_ProgramCounter,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_RegFile.v,1641747182,verilog,,,,t_RegFile,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sim_1/new/t_SL2.v,1641735926,verilog,,,,t_SL2,,,,,,,,
+D:/Desktop/cpu/cpu.srcs/sources_1/new/cpu.v,1641753173,verilog,,D:/Desktop/cpu/cpu.srcs/sim_1/new/t_CPU.v,,ALU;Adder;AluDec;CPU;Controller;DataMemory;Ext;InstMem;MUX_32;MUX_5;MainDec;ProgramCounter;RegFile;SL2,,,,,,,,

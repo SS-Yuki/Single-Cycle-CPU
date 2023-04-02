@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jan  9 21:46:22 2022
+# Process ID: 15984
+# Current directory: D:/Desktop/cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2764 D:\Desktop\cpu\cpu.xpr
+# Log file: D:/Desktop/cpu/vivado.log
+# Journal file: D:/Desktop/cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/cpu/cpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source t_ProgramCounter.tcl
+add_bp {D:/Desktop/cpu/cpu.srcs/sim_1/new/t_ProgramCounter.v} 13
+remove_bps -file {D:/Desktop/cpu/cpu.srcs/sim_1/new/t_ProgramCounter.v} -line 13
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top t_ALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim
+launch_simulation
+source t_ALU.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top t_Adder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source t_Adder.tcl
+close_sim
